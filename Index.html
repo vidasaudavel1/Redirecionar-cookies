@@ -2,49 +2,65 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Confirmação de Cookies</title>
+  <title>Carregando conteúdo...</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f2f2f2;
       display: flex;
-      align-items: center;
       justify-content: center;
+      align-items: center;
       height: 100vh;
     }
-    .cookie-box {
-      background: #fff;
+
+    .cookie-container {
+      background-color: #ffffff;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
       text-align: center;
     }
-    .cookie-box p {
-      margin-bottom: 20px;
+
+    .cookie-container h2 {
+      margin-bottom: 10px;
+      color: #333;
     }
-    .cookie-box button {
-      background-color: #27ae60;
+
+    .cookie-container p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .cookie-container button {
+      padding: 12px 25px;
+      background-color: #1abc9c;
       color: white;
       border: none;
-      padding: 12px 25px;
+      border-radius: 6px;
       font-size: 16px;
-      border-radius: 5px;
       cursor: pointer;
+    }
+
+    .cookie-container button:hover {
+      background-color: #16a085;
     }
   </style>
 </head>
 <body>
 
-<div class="cookie-box">
-  <p>Este site utiliza cookies para melhorar sua experiência. Aceita continuar?</p>
-  <button id="aceitar">Aceitar</button>
+<div class="cookie-container">
+  <h2>Privacidade e Cookies</h2>
+  <p>Utilizamos cookies para oferecer uma melhor experiência. Clique em "Aceitar" para continuar.</p>
+  <button id="acceptBtn">Aceitar</button>
 </div>
 
 <script>
-  document.getElementById("aceitar").addEventListener("click", function() {
+  document.getElementById("acceptBtn").addEventListener("click", function() {
     setTimeout(function() {
       window.location.href = "https://app.monetizze.com.br/r/APK25370077/?u=BP81053";
-    }, 2000); // tempo de delay em ms (2000 = 2 segundos)
+    }, 1500); // redireciona após 1.5 segundos
   });
 </script>
 
